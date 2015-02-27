@@ -351,6 +351,8 @@ C.themes["Blizzard_GarrisonUI"] = function()
 		f:SetScript("OnEvent", function(self, event, addon)
 			if addon == "MasterPlan" then
 				F.ReskinTab(GarrisonMissionFrameTab3)
+				F.ReskinTab(GarrisonMissionFrameTab4)
+				F.ReskinExpandOrCollapse(GarrisonMissionFrame.MissionTab.MissionPage.MinimizeButton)
 				self:UnregisterEvent("ADDON_LOADED")
 			end
 		end)
